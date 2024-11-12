@@ -2,26 +2,270 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  @apply bg-black_extra text-white;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.overflowy-hidden {
+  overflow-y: hidden;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-size: 1.6rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.nav-padding {
+  padding: 2rem 8rem;
+}
+
+.hero-content-padding {
+  padding: 0rem 8rem;
+}
+.common-padding {
+  padding: 12rem 9rem;
+}
+
+.common-padding_small {
+  padding: 8rem 9rem;
+}
+
+.header {
+  color: #ddd;
+}
+
+hr.hr-short {
+  @apply border-t-[7px] border-primary;
+  position: relative;
+  max-width: 45px;
+  margin: 2.4rem auto;
+  /* border-top: 6px solid #08c1b8; */
+  text-align: left;
+  border-radius: 10rem;
+}
+
+.logo {
+  font-style: italic;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header a,
+.header li {
+  @apply font-semibold text-white;
+}
+
+.header li {
+  @apply mb-2;
+}
+
+.header li:hover {
+  @apply border-b-2 border-primary mb-0 transition-all duration-150 ease-out;
+}
+
+.active {
+  @apply border-b-2 !mb-0 border-primary;
+}
+
+.slider_nav {
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.slider:hover .slider_nav {
+  opacity: 1;
+}
+
+.slider_nav button {
+  background-color: rgba(15, 15, 15, 0.4);
+  padding: 1.2rem 1rem;
+}
+
+.name {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.button_primary {
+  @apply inline-block font-semibold bg-primary px-10 py-4 text-white text-center;
+  border-radius: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: all 0.3s;
+}
+
+.button_primary:hover {
+  @apply bg-primary_shade;
+}
+
+.exp_year {
+  font-size: 12rem;
+  font-weight: bolder;
+}
+
+.exp_desc {
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.exp_sm_year {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.exp_sm_desc {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.experience {
+  background-image: linear-gradient(
+      to right top,
+      rgba(18, 17, 14, 0.7),
+      rgba(18, 17, 14, 0.6)
+    ),
+    url('/bg.jpg');
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.exp_left {
+  background: rgb(14, 12, 12);
+  background: linear-gradient(
+    16deg,
+    rgba(14, 12, 12, 1) 25%,
+    rgba(5, 5, 5, 0.7497592787114846) 100%,
+    rgba(0, 50, 255, 0.9178265056022409) 100%
+  );
+}
+
+.title {
+  font-size: 3.6rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.gallery_each:hover .gallery_each-text {
+  @apply opacity-100;
+  cursor: pointer;
+}
+
+.gallery_each-text {
+  @apply opacity-0 bg-[#f7502399];
+  /* background-color: rgba(247, 80, 35, 0.6); */
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet {
+  @apply !bg-primary;
+}
+
+.form-group:focus:invalid {
+  /* border-bottom: 2px solid #ff6b6b; */
+  @apply border-b-2 border-grey;
+}
+
+.form-group:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  /* border-bottom: 2px solid #0d6efd; */
+  @apply border-b-2 border-white;
+}
+
+.form-group {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ced4da;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  padding: 0 0.5rem 1rem 0.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.show {
+  display: flex !important;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 62%;
+  }
+
+  .nav-padding {
+    padding: 2rem 5rem;
+  }
+
+  .common-padding {
+    padding: 8rem 5rem;
+  }
+
+  .common-padding_small {
+    padding: 6rem 5rem;
+  }
+
+  .hero-content-padding {
+    padding: 0rem 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-padding {
+    padding: 2rem 3rem;
+  }
+
+  .common-padding {
+    padding: 8rem 3rem;
+  }
+
+  .common-padding_small {
+    padding: 6rem 3rem;
+  }
+
+  .hero-content-padding {
+    padding: 0rem 3rem;
+  }
+
+  .gallery_each:hover .gallery_each-text {
+    @apply opacity-100;
+    cursor: pointer;
+  }
+
+  .gallery_each-text {
+    @apply opacity-100 bg-[#0909094d];
+    /* background-color: rgba(247, 80, 35, 0.6); */
   }
 }
