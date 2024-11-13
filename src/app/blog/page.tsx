@@ -4,7 +4,7 @@ export default function Blog() {
     return (
         <main>
             <Banner title="Blogs" paragraph="Here are some of my thoughts on different topics" />
-            <section className="common-padding">
+            <section className="common-padding bg-black_extra">
                 <p>No Blogs to display</p>
 
             </section>

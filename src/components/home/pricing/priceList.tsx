@@ -35,7 +35,7 @@ export default function PricingList() {
 
         // </div >
 
-        <div className="common-padding_small !pt-0 slider">
+        <div className="common-padding_small !pt-0 slider bg-black_extra">
             <Swiper
                 speed={900}
                 loop={true}

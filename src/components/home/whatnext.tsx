@@ -3,7 +3,7 @@ import Button from "../ui/button";
 
 export default function WhatNext() {
     return (
-        <section className="common-padding_small text-center">
+        <section className="common-padding_small text-center bg-black_extra">
             <div className="mb-[5rem]">
                 <Title title="What Next" paragraph="Interested in working with me?" />
             </div>
