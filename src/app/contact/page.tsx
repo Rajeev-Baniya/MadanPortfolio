@@ -17,7 +17,7 @@ export default function Contact() {
                             <div>
                                 <div className="mb-10">
                                     <p className="flex items-center gap-3 mb-4"><span className="p-2 text-white"><IoLocation /></span> <span>Address: Bhalam, Pokhara</span></p>
-                                    <a href="tel:1234" className="flex items-center gap-3 mb-4"><span className="p-2 text-white"><FaPhoneVolume /></span> <span>Phone: 9812345678</span></a>
+                                    <a href="tel:1234" className="flex items-center gap-3 mb-4"><span className="p-2 text-white"><FaPhoneVolume /></span> <span>Phone: +977 9805891112</span></a>
                                     <a href="mailto:abc@example.com" className="flex items-center gap-3 mb-4"><span className="p-2 text-white"><IoMail /></span> Email: <span className="text-primary">abc@example.com</span></a>
                                 </div>
                                 <div>

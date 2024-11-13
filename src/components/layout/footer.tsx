@@ -50,7 +50,7 @@ export default function Footer() {
 
                         <a href="#" className="flex items-center gap-3"><span className="p-3 bg-tertiary rounded-[50%] text-white"><IoLocation /></span> <span>Bhalam, Pokhara</span></a>
                         <a href="#" className="flex items-center gap-3"><span className="p-3 bg-tertiary rounded-[50%] text-white"><IoMail /></span> <span className="break-all">madan@example.com</span></a>
-                        <a href="#" className="flex items-center gap-3"><span className="p-3 bg-tertiary rounded-[50%] text-white"><FaPhoneVolume /></span> <span>9812345678</span></a>
+                        <a href="#" className="flex items-center gap-3"><span className="p-3 bg-tertiary rounded-[50%] text-white"><FaPhoneVolume /></span> <span>+977 9805891112</span></a>
 
                     </div>
                 </div>
