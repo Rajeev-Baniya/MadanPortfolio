@@ -72,18 +72,13 @@ export default function Header() {
                             } transition-transform duration-300 ease-in-out md:hidden`}
                     >
                         <nav className="p-8 space-y-4">
-                            <Link href="/" className="block p-2 hover:bg-gray-700 rounded">
-                                Home
-                            </Link>
-                            <Link href="/about" className="block p-2 hover:bg-gray-700 rounded">
-                                About
-                            </Link>
-                            <Link href="/blog" className="block p-2 hover:bg-gray-700 rounded">
-                                Blog
-                            </Link>
-                            <Link href="/contact" className="block p-2 hover:bg-gray-700 rounded">
-                                Contact
-                            </Link>
+
+                            {pages.map((each, index) => (
+                                <Link href={each.path} className={`block p-2 hover:bg-gray-700 rounded ${isActive(each.path) ? '!text-primary' : ""}`} key={index}>
+                                    {each.name}
+                                </Link>
+                            ))}
+
                         </nav>
                     </div>
 
