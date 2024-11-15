@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { Metadata } from "next";
-import Head from "next/head";
+// import Head from "next/head";
 
 
 const geistSans = localFont({
@@ -37,9 +37,12 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta name="google-site-verification" content="OTIqYx4RqVkfKonb_K4FuHkKLcaQ2ti7Vlw9HO74fGE" />
-      </Head>
+      </head>
+      {/* <Head>
+        <meta name="google-site-verification" content="OTIqYx4RqVkfKonb_K4FuHkKLcaQ2ti7Vlw9HO74fGE" />
+      </Head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
