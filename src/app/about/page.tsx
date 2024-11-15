@@ -9,7 +9,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "About",
-    description: "Madan Pokhrel, Madan Pokhrel Photographer, Photographer, Pokhara , Madan Pokhrel Photography, Photographer Madan, Wedding Photographer"
+    description: "Madan Pokhrel is a professional wedding and events photographer. He is based in Pokhara. He has over 7 yeaars of experience.",
+    keywords: "Madan Pokhrel, Madan Pokhrel Photographer, Madan Pokhrel Pokhara, Madan Pokhrel Portfolio, Madan Pokhrel Photography"
 }
 
 export default function About() {
@@ -19,8 +20,8 @@ export default function About() {
             <section className="common-padding_small bg-black_extra">
                 <div className="flex items-center">
                     <div className="w-[50%]">
-                        <Image src="https://res.cloudinary.com/dg5ku2nbh/image/upload/v1679218402/cld-sample-4.jpg" objectFit="cover" sizes="100vw" height={0} width={0}
-                            alt="Madan Pokhrel" className=" h-[52rem] w-[100%] rounded-md " />
+                        <Image src="/madan.jpg" objectFit="cover" sizes="100vw" height={0} width={0}
+                            alt="Madan Pokhrel" className=" h-[52rem] w-[100%] rounded-md object-cover " />
                     </div>
                     <div className="pl-[3.2rem] mt-5 w-[50%]">
                         <Title title="Who I am?" paragraph="A little bit about me" position="left" />

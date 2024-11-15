@@ -10,14 +10,15 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Portfolio | Madan Pokhrel",
-  description: "Madan Pokhrel, Madan Pokhrel Photographer, Photographer, Pokhara , Madan Pokhrel Photography, Photographer Madan, Wedding Photographer"
+  description: "Madan Pokhrel is a professional wedding and events photographer. He is based in Pokhara. He has over 7 yeaars of experience.",
+  keywords: "Madan Pokhrel, Madan Pokhrel Photographer, Madan Pokhrel Pokhara, Madan Pokhrel Portfolio, Madan Pokhrel Photography"
 }
 
 
 export default async function Home() {
 
-  const about = await getData();
-  console.log(about);
+  // const about = await getData();
+  // console.log(about);
 
   return (
     <main>
@@ -32,19 +33,19 @@ export default async function Home() {
   );
 }
 
-const getData = async () => {
-  try {
-    const res = await fetch(`${process.env.API}/about/670c8d27c32fc1c457d7a7ec`, {
-      next: { revalidate: 1 },
-    });
+// const getData = async () => {
+//   try {
+//     const res = await fetch(`${process.env.API}/about/670c8d27c32fc1c457d7a7ec`, {
+//       next: { revalidate: 1 },
+//     });
 
-    if (!res.ok) {
-      throw new Error(`Request failed with status ${res.status}: ${res.statusText}`);
-    }
+//     if (!res.ok) {
+//       throw new Error(`Request failed with status ${res.status}: ${res.statusText}`);
+//     }
 
-    const about = await res.json();
-    return about;
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
-};
+//     const about = await res.json();
+//     return about;
+//   } catch (error) {
+//     console.error("Error fetching data:", error);
+//   }
+// };
