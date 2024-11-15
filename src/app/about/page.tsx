@@ -18,21 +18,21 @@ export default function About() {
         <main>
             <Banner title="Madan Pokhrel" paragraph="Photographer & Videographer" />
             <section className="common-padding_small bg-black_extra">
-                <div className="flex items-center">
-                    <div className="w-[50%]">
+                <div className="flex items-center lg:flex-row flex-col lg:mb-0 mb-[6.4rem]">
+                    <div className="lg:w-[50%] w-[100%]">
                         <Image src="/madan.jpg" objectFit="cover" sizes="100vw" height={0} width={0}
-                            alt="Madan Pokhrel" className=" h-[52rem] w-[100%] rounded-md object-cover " />
+                            alt="Madan Pokhrel" className=" lg:h-[52rem] h-[42rem] w-[100%] rounded-md object-cover " />
                     </div>
-                    <div className="pl-[3.2rem] mt-5 w-[50%]">
+                    <div className="lg:pl-[3.2rem] pl-0  mt-5 lg:w-[50%] w-[100%]">
                         <Title title="Who I am?" paragraph="A little bit about me" position="left" />
 
                         <p className="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tenetur maxime nisi quod ut debitis dolorem officia sit labore, facilis expedita sed rerum. Quidem sint a quas minus quaerat minima.</p>
                     </div>
 
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center lg:flex-row flex-col-reverse">
 
-                    <div className="pr-[3.2rem] mt-5 w-[50%]">
+                    <div className="lg:pr-[3.2rem] pr-0 mt-5 lg:w-[50%] w-[100%]">
                         <Title title="What I do?" paragraph="A  bit of my work" position="left" />
 
                         <p className="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tenetur maxime nisi quod ut debitis dolorem officia sit labore, facilis expedita sed rerum. Quidem sint a quas minus quaerat minima.</p>
@@ -44,9 +44,9 @@ export default function About() {
                     </div>
 
 
-                    <div className="w-[50%]">
+                    <div className="lg:w-[50%] w-[100%]">
                         <Image src="https://res.cloudinary.com/dg5ku2nbh/image/upload/v1679218402/cld-sample-4.jpg" objectFit="cover" sizes="100vw" height={0} width={0}
-                            alt="Madan Pokhrel" className=" h-[52rem] w-[100%] rounded-md " />
+                            alt="Madan Pokhrel" className=" lg:h-[52rem] h-[42rem] w-[100%] rounded-md " />
                     </div>
 
 
