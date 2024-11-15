@@ -6,11 +6,17 @@ import Slider from "@/components/home/slider";
 import Testimonial from "@/components/home/testimonial";
 import WhatNext from "@/components/home/whatnext";
 import Works from "@/components/home/works/works";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Portfolio | Madan Pokhrel",
+  description: "Madan Pokhrel, Madan Pokhrel Photographer, Photographer, Pokhara , Madan Pokhrel Photography, Photographer Madan, Wedding Photographer"
+}
+
 
 export default async function Home() {
 
   const about = await getData();
-
   console.log(about);
 
   return (

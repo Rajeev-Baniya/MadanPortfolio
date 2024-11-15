@@ -1,9 +1,15 @@
 import Banner from "@/components/common/banner";
 import Title from "@/components/common/title";
 import Button from "@/components/ui/button";
+import { Metadata } from "next";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin, FaPhoneVolume } from "react-icons/fa6";
 import { IoLocation, IoMail } from "react-icons/io5";
 
+
+export const metadata: Metadata = {
+    title: "Contact",
+    description: "Madan Pokhrel, Madan Pokhrel Photographer, Photographer, Pokhara , Madan Pokhrel Photography, Photographer Madan, Wedding Photographer"
+}
 
 export default function Contact() {
     const paragraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam minima dolorem. Sequi corrupti assumenda tempore culpa magni adipisci autem distinctio rem?"

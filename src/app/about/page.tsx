@@ -2,9 +2,15 @@ import Banner from "@/components/common/banner";
 import Title from "@/components/common/title";
 import Projects from "@/components/home/works/projects";
 import Button from "@/components/ui/button";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 // import Title from "@/components/common/title";
+
+export const metadata: Metadata = {
+    title: "About",
+    description: "Madan Pokhrel, Madan Pokhrel Photographer, Photographer, Pokhara , Madan Pokhrel Photography, Photographer Madan, Wedding Photographer"
+}
 
 export default function About() {
     return (
