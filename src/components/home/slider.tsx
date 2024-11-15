@@ -6,6 +6,7 @@ import { Swiper as SwiperType } from 'swiper';
 import { useRef } from 'react';
 import { ArrowNext, ArrowPrev } from '../icons';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa6";
+import Link from 'next/link';
 
 
 export default function Slider() {
@@ -44,7 +45,7 @@ export default function Slider() {
                 <p className='text-white text-[2rem] mb-[2rem]'>A <span className='text-secondary font-semibold'>Professional Photographer</span> From <span className='text-tertiary font-semibold'>Pokhara </span></p>
                 <p className='text-[1.8rem]'>I am a professional photographer based in Pokhara and I am very<br />  passionate and dedicated to my work </p>
                 <div className='mt-[3rem] flex gap-[3.2rem] items-center'>
-                    <a href='#' className='button_primary'>About Me</a>
+                    <Link href='/about' className='button_primary'>About Me</Link>
                     <div className='flex justify-center gap-[1.6rem]'>
                         <a href='#'>  <FaFacebookF className='text-[1.8rem]' /> </a>
                         <a href='#'><FaInstagram className='text-[1.8rem]' /></a>
