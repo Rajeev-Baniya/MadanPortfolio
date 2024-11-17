@@ -18,7 +18,7 @@ export default function Contact() {
             <Banner title="contact" paragraph={paragraph} />
             <section className="common-padding bg-black_extra">
                 <div className="flex gap-[3.2rem] items-center md:flex-nowrap flex-wrap">
-                    <div className="h-[60rem] rounded-[1rem] w-[100%] md:w-[50%] relative !bg-cover !bg-center flex items-center justify-center" style={{ backgroundImage: "linear-gradient(to right top, rgba(18, 17, 14, 0.6), rgba(18, 17, 14, 0.3)), url('dp.jpg')" }}>
+                    <div className="h-[60rem] rounded-[1rem] w-[100%] md:w-[50%] relative !bg-cover !bg-center flex items-center justify-center" style={{ backgroundImage: "linear-gradient(to right top, rgba(18, 17, 14, 0.6), rgba(18, 17, 14, 0.3)), url('/dp.jpg')" }}>
                         <div className="bg-[#04000299] text-center md:w-[70%] w-[90%] h-[50%] rounded-[1.2rem] px-[2.4rem] flex items-center">
                             <div>
                                 <div className="mb-10">
