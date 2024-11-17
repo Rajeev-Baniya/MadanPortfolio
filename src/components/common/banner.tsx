@@ -5,7 +5,7 @@ interface BannerProps {
     image?: string;
 }
 
-const Banner: React.FC<BannerProps> = ({ title, paragraph, image = 'dp.jpg' }) => {
+const Banner: React.FC<BannerProps> = ({ title, paragraph, image = '/dp.jpg' }) => {
     return (
         <section className="h-[55vh] relative !bg-cover !bg-center" style={{ backgroundImage: `linear-gradient(to right top, rgba(18, 17, 14, 0.6), rgba(18, 17, 14, 0.3)), url(${image})` }}>
             <div className="absolute bottom-10 left-[5.5%] w-full">
