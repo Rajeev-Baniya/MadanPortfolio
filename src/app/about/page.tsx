@@ -48,8 +48,6 @@ export default function About() {
                         <Image src="https://res.cloudinary.com/dg5ku2nbh/image/upload/v1679218402/cld-sample-4.jpg" objectFit="cover" sizes="100vw" height={0} width={0}
                             alt="Madan Pokhrel" className=" lg:h-[52rem] h-[42rem] w-[100%] rounded-md " />
                     </div>
-
-
                 </div>
             </section>
             <div className=" bg-black_extra">

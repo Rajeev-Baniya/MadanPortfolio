@@ -9,7 +9,10 @@ export const gallery = [
     description: 'A ceromony at Pokhara',
     thumbnail:
       'https://res.cloudinary.com/dg5ku2nbh/image/upload/v1729572423/1708002002046_93ea3f87-43c8-4fbf-a3d0-5f2397d50a84_a4pdoi.jpg',
-    images: [],
+    images: [
+      'https://res.cloudinary.com/dg5ku2nbh/image/upload/v1679218401/cld-sample-2.jpg',
+      'https://res.cloudinary.com/dg5ku2nbh/image/upload/v1729572423/1708002002046_93ea3f87-43c8-4fbf-a3d0-5f2397d50a84_a4pdoi.jpg',
+    ],
   },
   {
     id: 2,
@@ -18,7 +21,9 @@ export const gallery = [
       'https://res.cloudinary.com/dg5ku2nbh/image/upload/v1693929878/upload/pme9zc2gkndnzk7i1upl.jpg',
     description: 'A ceromony at Pokhara',
 
-    images: [],
+    images: [
+      'https://res.cloudinary.com/dg5ku2nbh/image/upload/v1693929878/upload/pme9zc2gkndnzk7i1upl.jpg',
+    ],
   },
   {
     id: 3,

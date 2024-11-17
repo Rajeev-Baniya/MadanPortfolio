@@ -2,12 +2,13 @@
 interface BannerProps {
     title: string;
     paragraph: string;
+    image?: string;
 }
 
-const Banner: React.FC<BannerProps> = ({ title, paragraph }) => {
+const Banner: React.FC<BannerProps> = ({ title, paragraph, image = 'dp.jpg' }) => {
     return (
-        <section className="h-[55vh] relative !bg-cover !bg-center" style={{ backgroundImage: "linear-gradient(to right top, rgba(18, 17, 14, 0.6), rgba(18, 17, 14, 0.3)), url('dp.jpg')" }}>
-            <div className="absolute bottom-10 left-[5.5%]">
+        <section className="h-[55vh] relative !bg-cover !bg-center" style={{ backgroundImage: `linear-gradient(to right top, rgba(18, 17, 14, 0.6), rgba(18, 17, 14, 0.3)), url(${image})` }}>
+            <div className="absolute bottom-10 left-[5.5%] w-full">
                 <h1 className="text-[4.6rem] font-extrabold capitalize">
                     {title}
                 </h1>

@@ -29,8 +29,9 @@ export default function Header() {
     const pages = [
         { name: "Home", path: "/" },
         { name: "About", path: "/about" },
-        { name: "Blog", path: "/blog" },
-        { name: "Contact", path: "/contact" }
+        { name: "Projects", path: "/projects" },
+        // { name: "Blog", path: "/blog" },
+        { name: "Contact", path: "/contact" },
     ]
 
     const [isOpen, setIsOpen] = useState(false);
