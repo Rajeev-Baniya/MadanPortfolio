@@ -17,7 +17,7 @@ export default function Testimonial() {
                 className='mySwiper'
                 modules={[Navigation, Pagination, Autoplay]}
                 autoplay={{
-                    delay: 4000,
+                    delay: 9000,
                     disableOnInteraction: false,
                 }}
                 pagination={{ dynamicBullets: true, clickable: true }}
