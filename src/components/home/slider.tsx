@@ -28,13 +28,13 @@ export default function Slider() {
             >
                 <SwiperSlide>
                     <div className="h-screen relative"
-                        style={{ backgroundImage: "linear-gradient(to right top, rgba(18, 17, 14, 0.6), rgba(18, 17, 14, 0.3)), url('madan.jpg')", backgroundSize: 'cover', backgroundPosition: "center" }}
+                        style={{ backgroundImage: "linear-gradient(to right top, rgba(18, 17, 14, 0.6), rgba(18, 17, 14, 0.3)), url('/madan.jpg')", backgroundSize: 'cover', backgroundPosition: "center" }}
                     >
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="h-screen relative"
-                        style={{ backgroundImage: "linear-gradient(to right top, rgba(18, 17, 14, 0.6), rgba(18, 17, 14, 0.3)), url('dp.jpg')", backgroundSize: 'cover', backgroundPosition: "center" }}
+                        style={{ backgroundImage: "linear-gradient(to right top, rgba(18, 17, 14, 0.6), rgba(18, 17, 14, 0.3)), url('/dp.jpg')", backgroundSize: 'cover', backgroundPosition: "center" }}
                     >
                     </div>
                 </SwiperSlide>

@@ -17,8 +17,6 @@ export const metadata: Metadata = {
 
 export default async function Home() {
 
-  // const about = await getData();
-  // console.log(about);
 
   return (
     <main>
@@ -32,20 +30,3 @@ export default async function Home() {
     </main>
   );
 }
-
-// const getData = async () => {
-//   try {
-//     const res = await fetch(`${process.env.API}/about/670c8d27c32fc1c457d7a7ec`, {
-//       next: { revalidate: 1 },
-//     });
-
-//     if (!res.ok) {
-//       throw new Error(`Request failed with status ${res.status}: ${res.statusText}`);
-//     }
-
-//     const about = await res.json();
-//     return about;
-//   } catch (error) {
-//     console.error("Error fetching data:", error);
-//   }
-// };
