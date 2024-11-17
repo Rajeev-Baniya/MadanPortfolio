@@ -132,6 +132,13 @@ export const pricing = [
 export const testimonials = [
   {
     id: 1,
+    image: '/rajeev.jpg',
+    testimonial:
+      'Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that do not yet have content.',
+    name: 'Rajeev Baniya',
+  },
+  {
+    id: 2,
     image:
       'https://res.cloudinary.com/dg5ku2nbh/image/upload/v1679218402/cld-sample-4.jpg',
     testimonial:
@@ -139,15 +146,7 @@ export const testimonials = [
     name: 'Rajeev Baniya',
   },
   {
-    id: 1,
-    image:
-      'https://res.cloudinary.com/dg5ku2nbh/image/upload/v1679218402/cld-sample-4.jpg',
-    testimonial:
-      'Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that do not yet have content.',
-    name: 'Rajeev Baniya',
-  },
-  {
-    id: 1,
+    id: 3,
     image:
       'https://res.cloudinary.com/dg5ku2nbh/image/upload/v1679218402/cld-sample-4.jpg',
     testimonial:
