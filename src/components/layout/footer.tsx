@@ -1,4 +1,5 @@
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin, FaPhoneVolume } from "react-icons/fa6";
+import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaLinkedin, FaPhoneVolume, FaYoutube } from "react-icons/fa6";
 import { IoLocation, IoMail } from "react-icons/io5";
 
 
@@ -10,9 +11,9 @@ export default function Footer() {
                 <div className="col-span-6 md:col-span-3">
                     <h1 className="font-semibold mb-[2rem] text-[1.7rem]">Learn More</h1>
                     <div className="flex flex-col gap-6 text-grey">
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Document</a>
+                        <Link href="/about">About</Link>
+                        <Link href="/contact">Contact</Link>
+                        <a href="/projects">Projects</a>
                     </div>
 
                 </div>
@@ -20,9 +21,9 @@ export default function Footer() {
                     <h1 className="font-semibold mb-[2rem] text-[1.7rem]">Partners</h1>
                     <div className="flex flex-col gap-6 text-grey">
 
-                        <a href="#">Hamro Weddings</a>
-                        <a href="#">Facebook</a>
-                        <a href="#">Instagram</a>
+                        <a href="https://www.facebook.com/hamroweddings/" target="_blank">Hamro Weddings</a>
+                        <a href="https://www.facebook.com/hamroweddings/" target="_blank">Facebook</a>
+                        <a href="https://www.instagram.com/hamroweddings/" target="_blank">Instagram</a>
                     </div>
 
                 </div>
@@ -35,9 +36,9 @@ export default function Footer() {
                     <h1 className="font-semibold mb-[2rem] text-[1.7rem]">Follow Me Here</h1>
                     <div className="flex gap-6 text-grey">
 
-                        <a href='#'>  <FaFacebookF className='text-[1.8rem]' /> </a>
-                        <a href='#'><FaInstagram className='text-[1.8rem]' /></a>
-                        <a href='#'> <FaTwitter className='text-[1.8rem]' /></a>
+                        <a href='https://www.facebook.com/madan.pokhrel.73' target="_blank">  <FaFacebookF className='text-[1.8rem]' /> </a>
+                        <a href='https://www.instagram.com/madan.__.pokhrel/' target="_blank"><FaInstagram className='text-[1.8rem]' /></a>
+                        <a href='https://www.youtube.com/@hamroweddings' target="_blank"> <FaYoutube className='text-[1.8rem]' /></a>
                         <a href='#'> <FaLinkedin className='text-[1.8rem]' /></a>
                     </div>
 
@@ -50,7 +51,7 @@ export default function Footer() {
 
                         <a href="#" className="flex items-center gap-3"><span className="p-3 bg-tertiary rounded-[50%] text-white"><IoLocation /></span> <span>Bhalam, Pokhara</span></a>
                         <a href="#" className="flex items-center gap-3"><span className="p-3 bg-tertiary rounded-[50%] text-white"><IoMail /></span> <span className="break-all">madan@example.com</span></a>
-                        <a href="#" className="flex items-center gap-3"><span className="p-3 bg-tertiary rounded-[50%] text-white"><FaPhoneVolume /></span> <span>+977 9805891112</span></a>
+                        <a href="tel:+977 9805891112" className="flex items-center gap-3"><span className="p-3 bg-tertiary rounded-[50%] text-white"><FaPhoneVolume /></span> <span>+977 9805891112</span></a>
 
                     </div>
                 </div>

@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css';
 import { Swiper as SwiperType } from 'swiper';
 import { useRef } from 'react';
 import { ArrowNext, ArrowPrev } from '../icons';
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa6";
 import Link from 'next/link';
 
 
@@ -47,9 +47,9 @@ export default function Slider() {
                 <div className='mt-[3rem] flex gap-[3.2rem] items-center'>
                     <Link href='/about' className='button_primary'>About Me</Link>
                     <div className='flex justify-center gap-[1.6rem]'>
-                        <a href='#'>  <FaFacebookF className='text-[1.8rem]' /> </a>
-                        <a href='#'><FaInstagram className='text-[1.8rem]' /></a>
-                        <a href='#'> <FaTwitter className='text-[1.8rem]' /></a>
+                        <a href='https://www.facebook.com/madan.pokhrel.73' target='_blank'>  <FaFacebookF className='text-[1.8rem]' /> </a>
+                        <a href='https://www.instagram.com/madan.__.pokhrel/' target='_blank'><FaInstagram className='text-[1.8rem]' /></a>
+                        <a href='https://www.youtube.com/@hamroweddings' target='_blank'> <FaYoutube className='text-[1.8rem]' /></a>
                         <a href='#'> <FaLinkedin className='text-[1.8rem]' /></a>
 
                     </div>
